@@ -92,7 +92,6 @@
 				8C43D04F27CF90010065F4D4 /* Controllers */,
 				8C43D03B27CF8DA80065F4D4 /* AppDelegate.swift */,
 				8C43D03D27CF8DA80065F4D4 /* SceneDelegate.swift */,
-				8C43D03F27CF8DA80065F4D4 /* MainTabBarViewController.swift */,
 				8C43D04427CF8DAB0065F4D4 /* Assets.xcassets */,
 				8C43D04627CF8DAB0065F4D4 /* LaunchScreen.storyboard */,
 				8C43D04927CF8DAB0065F4D4 /* Info.plist */,
@@ -103,11 +102,8 @@
 		8C43D04F27CF90010065F4D4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C43D05027CF90930065F4D4 /* HomeViewController.swift */,
-				8C43D05227CF90A20065F4D4 /* UpCommingViewController.swift */,
-				8C43D05427CF90B10065F4D4 /* SearchViewController.swift */,
-				8C43D05627CF90CA0065F4D4 /* DownloadsViewController.swift */,
-				8CA265E927D0E6B100797F65 /* SearchResultsViewController.swift */,
+				8CA265EC27D0E76200797F65 /* General */,
+				8CA265EB27D0E73400797F65 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +157,26 @@
 				8CA265E527D0D78000797F65 /* TitleTableViewCell.swift */,
 			);
 			path = upcoming;
+			sourceTree = "<group>";
+		};
+		8CA265EB27D0E73400797F65 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8C43D03F27CF8DA80065F4D4 /* MainTabBarViewController.swift */,
+				8C43D05027CF90930065F4D4 /* HomeViewController.swift */,
+				8C43D05227CF90A20065F4D4 /* UpCommingViewController.swift */,
+				8C43D05427CF90B10065F4D4 /* SearchViewController.swift */,
+				8C43D05627CF90CA0065F4D4 /* DownloadsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8CA265EC27D0E76200797F65 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				8CA265E927D0E6B100797F65 /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

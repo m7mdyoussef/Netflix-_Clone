@@ -45,11 +45,9 @@ class ApiCaller {
             
             do{
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-              //  print(results.results)
                 completion(.success(results.results))
                 
             } catch {
-              //  print(error.localizedDescription)
                 completion(.failure(ApiError.failedToGetData))
             }
  
@@ -66,11 +64,9 @@ class ApiCaller {
             
             do{
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-               // print(results.results)
                 completion(.success(results.results))
                 
             } catch {
-               // print(error.localizedDescription)
                 completion(.failure(ApiError.failedToGetData))
             }
  
@@ -87,11 +83,9 @@ class ApiCaller {
             
             do{
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-               // print(results.results)
                 completion(.success(results.results))
                 
             } catch {
-               // print(error.localizedDescription)
                 completion(.failure(ApiError.failedToGetData))
             }
  
@@ -106,11 +100,9 @@ class ApiCaller {
             
             do{
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-               // print(results.results)
                 completion(.success(results.results))
                 
             } catch {
-               // print(error.localizedDescription)
                 completion(.failure(ApiError.failedToGetData))
             }
  
@@ -125,16 +117,34 @@ class ApiCaller {
             
             do{
                 let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
-               // print(results.results)
                 completion(.success(results.results))
                 
             } catch {
-               // print(error.localizedDescription)
                 completion(.failure(ApiError.failedToGetData))
             }
  
         }
         task.resume()
     }
-                                                                        
+         
+    func search(with query: String , completion: @escaping (Result<[Title], Error>) -> Void){
+        //https://api.themoviedb.org/3/search/movie?api_key={api_key}&query=Jack+Reacher
+
+        guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
+        guard let url = URL(string: "\(Constants.baseURL)/3/search/movie?api_key=\(Constants.API_KEY)&query=\(query)") else {
+            return }
+        let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
+            guard let data = data , error == nil else {return}
+            
+            do{
+                let results = try JSONDecoder().decode(TrendingTitleResponse.self, from: data)
+                completion(.success(results.results))
+                
+            } catch {
+                completion(.failure(ApiError.failedToGetData))
+            }
+ 
+        }
+        task.resume()
+    }
 }

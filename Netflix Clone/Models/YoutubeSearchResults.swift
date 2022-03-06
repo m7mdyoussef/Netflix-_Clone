@@ -8,10 +8,10 @@
 import Foundation
 
 struct YoutubeSearchResponse : Codable{
-    let items: [VedioElement]
+    let items: [VideoElement]
 }
 
-struct VedioElement: Codable{
+struct VideoElement: Codable{
     let id: IdVideoElement
     
 }

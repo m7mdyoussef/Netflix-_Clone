@@ -150,7 +150,7 @@ class ApiCaller {
     }
     
     
-    func getMovie(with query: String, completion: @escaping (Result<VedioElement, Error>) -> Void){
+    func getMovie(with query: String, completion: @escaping (Result<VideoElement, Error>) -> Void){
         guard let query = query.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
         guard let url = URL(string: "\(Constants.youtubeBaseURL)q=\(query)&key=\(Constants.YoutubeAPI_KEY)") else {return}
         

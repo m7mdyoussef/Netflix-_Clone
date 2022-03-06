@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C29F91627D4D8A200C794A9 /* TitlePreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C29F91527D4D8A200C794A9 /* TitlePreviewViewModel.swift */; };
 		8C43D03C27CF8DA80065F4D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43D03B27CF8DA80065F4D4 /* AppDelegate.swift */; };
 		8C43D03E27CF8DA80065F4D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43D03D27CF8DA80065F4D4 /* SceneDelegate.swift */; };
 		8C43D04027CF8DA80065F4D4 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C43D03F27CF8DA80065F4D4 /* MainTabBarViewController.swift */; };
@@ -28,9 +29,11 @@
 		8CA265E827D0DC1C00797F65 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA265E727D0DC1C00797F65 /* TitleViewModel.swift */; };
 		8CA265EA27D0E6B100797F65 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA265E927D0E6B100797F65 /* SearchResultsViewController.swift */; };
 		8CA265EE27D0FF2200797F65 /* YoutubeSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA265ED27D0FF2200797F65 /* YoutubeSearchResults.swift */; };
+		8CA265F027D1046D00797F65 /* TitlePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA265EF27D1046D00797F65 /* TitlePreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8C29F91527D4D8A200C794A9 /* TitlePreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewModel.swift; sourceTree = "<group>"; };
 		8C43D03827CF8DA80065F4D4 /* Netflix Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Netflix Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C43D03B27CF8DA80065F4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C43D03D27CF8DA80065F4D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +55,7 @@
 		8CA265E727D0DC1C00797F65 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
 		8CA265E927D0E6B100797F65 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		8CA265ED27D0FF2200797F65 /* YoutubeSearchResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeSearchResults.swift; sourceTree = "<group>"; };
+		8CA265EF27D1046D00797F65 /* TitlePreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				8CA265E727D0DC1C00797F65 /* TitleViewModel.swift */,
+				8C29F91527D4D8A200C794A9 /* TitlePreviewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				8CA265E927D0E6B100797F65 /* SearchResultsViewController.swift */,
+				8CA265EF27D1046D00797F65 /* TitlePreviewViewController.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -272,7 +278,9 @@
 				8CA265EA27D0E6B100797F65 /* SearchResultsViewController.swift in Sources */,
 				8C43D06627CFC34F0065F4D4 /* Extensions.swift in Sources */,
 				8C43D03E27CF8DA80065F4D4 /* SceneDelegate.swift in Sources */,
+				8C29F91627D4D8A200C794A9 /* TitlePreviewViewModel.swift in Sources */,
 				8C43D05127CF90930065F4D4 /* HomeViewController.swift in Sources */,
+				8CA265F027D1046D00797F65 /* TitlePreviewViewController.swift in Sources */,
 				8C43D06427CFBE660065F4D4 /* Title.swift in Sources */,
 				8C43D06227CFB84B0065F4D4 /* ApiCaller.swift in Sources */,
 				8CA265E827D0DC1C00797F65 /* TitleViewModel.swift in Sources */,
